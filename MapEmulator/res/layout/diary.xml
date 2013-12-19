@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/AddEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/back"
+                android:layout_alignParentRight="true"
+                android:text="Add Entry" />
+
+            <EditText
+                android:id="@+id/diaryEntry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/AddEntry"
+                android:layout_alignBottom="@+id/AddEntry"
+                android:layout_toLeftOf="@+id/AddEntry"
+                android:ems="10" />
+
+            
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="144dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="60dp" >
+            
+            </ListView>
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Commonwealth Games Diary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:text="Venue You Visited :" />
+
+            <Spinner
+                android:id="@+id/Vspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AddEntry"
+                android:layout_below="@+id/textView1" />
+
+</RelativeLayout>

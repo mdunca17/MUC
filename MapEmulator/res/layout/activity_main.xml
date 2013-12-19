@@ -1,0 +1,97 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    map:cameraBearing="0"
+    map:cameraTargetLat="55.8580"
+    map:cameraTargetLng="-4.2590"
+    map:cameraTilt="0"
+    map:cameraZoom="10"
+    map:mapType="normal"
+    map:uiCompass="false"
+    map:uiRotateGestures="true"
+    map:uiScrollGestures="false"
+    map:uiTiltGestures="true"
+    map:uiZoomControls="false"
+    map:uiZoomGestures="true" >
+
+    <Button
+        android:id="@+id/previous_games"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Games Locations"
+        android:onClick="sendMessage" 
+        android:layout_marginRight="140dp"/>
+    
+    
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="216dip"
+        android:layout_marginTop="26dp"
+        />
+    <Button
+        android:id="@+id/Userloc"
+        android:layout_width ="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="Enter A location "
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft= "0dp"
+        android:layout_marginRight="260dp"
+        />
+    <EditText
+    android:id="@+id/UserLocation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="450dp"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+     />
+    <EditText
+    android:id="@+id/UserLocation2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="480dp"
+    android:layout_marginRight="60dp"
+    android:layout_marginLeft="60dp"
+    
+     />
+ <TextView
+     	android:id="@+id/Lat"
+        android:layout_width ="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text= "Latitude"
+     android:layout_marginTop="460dp"
+    android:layout_marginLeft="3dp"
+     />
+ <TextView
+     android:id="@+id/Lng"
+        android:layout_width ="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text= "Longitude"
+     android:layout_marginTop="490dp"
+    android:layout_marginLeft="3dp"
+     />
+ 
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="20dip" >
+        </TextView>
+        
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="20dip" >
+        </TextView>
+</fragment>
